@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
+    const menuButton = document.querySelector('.menu-button');
     const navList = document.querySelector('.nav-list');
 
-    menuToggle.addEventListener('click', function() {
+    menuButton.addEventListener('click', function() {
         navList.classList.toggle('active');
+        this.classList.toggle("active"); 
     });
 });
+
+

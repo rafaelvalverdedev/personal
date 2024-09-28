@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: linear-gradient(180deg, rgba(32, 44, 57, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    text-decoration: none;
+    height: 100vh;
+}
+
+.nav-list.active {
+    display: flex;
+}
+
+.menu-button {
+    font-size: 24px;
+    color: aliceblue;
+    font-weight: 900;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-button.active {
+    transform: rotate(45deg);
+    /* Rotaciona para criar o 'x' */
+}
+
+.menu-button:before {
+    content: "...";
+    /* Texto inicial */
+    transition: opacity 0.3s;
+}
+
+.menu-button.active:before {
+    content: "+";
+    opacity: 1;
+}
+
+.menu-button:before,
+.menu-button.active:before {
+    opacity: 1;
+}

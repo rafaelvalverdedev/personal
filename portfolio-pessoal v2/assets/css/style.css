@@ -12,6 +12,30 @@ html {
      font-family: "Lato", sans-serif;
 }
 
+a {
+     text-decoration: none;
+}
+
+a:hover {
+     color: darkblue;
+ }
+
+ a:visited {
+     color: aliceblue;
+ }
+
+ a:active {
+     color: red;
+ }
+
+
+ul, ol {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+
 #content {
      display: none;
      width: 100vw;
@@ -41,8 +65,10 @@ header {
      width: 100vw;
      height: 50px;
      position: fixed;
+     top: 30px;
+     display: flex;
+     justify-content: center;
      z-index: 1000;
-     /* Garante que fique acima do conteúdo */
 }
 
 main {
@@ -58,8 +84,6 @@ footer {
      position: relative;
      background-color: lightcoral;
 }
-
-
 
 svg {
      opacity: 0;
@@ -89,7 +113,7 @@ svg.some {
      animation: some 0.5s linear forwards;
 }
 
-code {
+.logo {
      background-color: #f6f6f6;
      color: black;
      font-family: Orbitron, "sans-serif";
@@ -116,55 +140,12 @@ code {
      max-width: 40px;
 }
 
-
-
 .conteudo_main {
      display: flex;
      flex-wrap: wrap;
      padding: 20px;
      justify-content: center;
      align-items: center;
-}
-
-
-.navbar {
-     display: flex;
-     justify-content: space-between;
-     margin: 10px 10px;
-     align-items: center;
-}
-
-.nav-list {
-     display: none;
-     flex-direction: column;
-     position: absolute;
-     top: 50px;
-     right: 0;
-     background-color: #333;
-     text-decoration: none;
-     width: 200px;
-}
-
-.nav-list.active {
-     display: flex;
-}
-
-.nav-list li {
-     margin: 10px 0;
-}
-
-.menu-toggle {
-     display: none;
-     background: none;
-     border: none;
-     color: #fff;
-     font-size: 32px;
-     font-weight: 800;
-     cursor: pointer;
-}
-
-.menu-toggle {
-     display: block;
 }
 
 .img-astronauta {
