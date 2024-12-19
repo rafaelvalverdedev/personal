@@ -1,6 +1,6 @@
 // Número de estrelas que queremos criar
 const numberOfStars = 200;
-const container = document.querySelector('.container-estrelas');
+const container = document.querySelector('#container-estrelas');
 
 // Função para gerar uma estrela com uma animação aleatória
 function createStar() {

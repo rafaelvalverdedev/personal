@@ -8,34 +8,3 @@
     font-family: "Orbitron", sans-serif;
 
 }
-
-.comentario {
-    color: #6a9955;
-    /* Verde para comentários */
-}
-
-.palavra-chave {
-    color: #569cd6;
-    /* Azul para palavras-chave */
-}
-
-.nome-funcao {
-    color: #dcdcaa;
-    /* Amarelo claro para nomes de funções */
-    font-weight: 700;
-}
-
-.chave {
-    color: #e0f006;
-    /* Verde-água para chaves como console */
-}
-
-.metodo {
-    color: #d7ba7d;
-    /* Marrom para métodos */
-}
-
-.string {
-    color: #ce9178;
-    /* Laranja para strings */
-}
