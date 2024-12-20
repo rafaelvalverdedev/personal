@@ -13,6 +13,9 @@ html {
      color: beige;
      font-family: "Lato", sans-serif;
      user-select: none;
+}
+
+img {
      pointer-events: none;
 }
 
@@ -20,16 +23,8 @@ a {
      text-decoration: none;
 }
 
-a:hover {
-     color: darkblue;
-}
-
-a:visited {
-     color: aliceblue;
-}
-
-a:active {
-     color: red;
+a:visited, a:active, a:hover {
+     color: #10232b;
 }
 
 ul,
@@ -79,7 +74,6 @@ header {
 
 section {
      z-index: 1;
-     width: 80vw;
      position: absolute;
      display: flex;
      flex-direction: row;
@@ -140,7 +134,7 @@ svg.some {
 
 .logogithub {
      z-index: 999;
-     position: absolute;
+     position: fixed;
      bottom: 0px;
      left: 10px;
      cursor: pointer;
