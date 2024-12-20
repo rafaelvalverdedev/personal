@@ -27,19 +27,19 @@ window.onload = function () {
     const footer = document.querySelector('footer');
     const logogithub = document.getElementById('logogithub');
 
-    // showElement(svg, 100);     
-    // apagaElement(svg, 2000);
-    // showElement(header, 2500); 
-    // showElement(section, 3500); 
-    // showElement(footer, 4500);
-    // showElement(logogithub, 5500);
+    showElement(svg, 100);     
+    apagaElement(svg, 700);
+    showElement(header, 1000); 
+    showElement(section, 1500); 
+    showElement(footer, 2000);
+    showElement(logogithub, 2500);
 
-    showElement(svg, 1);     
-    apagaElement(svg, 1);
-    showElement(header, 1); 
-    showElement(section, 1); 
-    showElement(footer, 1);
-    showElement(logogithub, 1);
+    // showElement(svg, 1);     
+    // apagaElement(svg, 1);
+    // showElement(header, 1); 
+    // showElement(section, 1); 
+    // showElement(footer, 1);
+    // showElement(logogithub, 1);
 
 
 

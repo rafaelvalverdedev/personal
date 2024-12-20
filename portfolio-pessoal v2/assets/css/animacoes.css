@@ -40,20 +40,16 @@
 }
 
 /* Animação para logotipo  <rafa/>  */
-
-
 @keyframes anima_barra_logo {
-    0% {
-        color: #324457;
-    }
 
-    50% {
-        color: #e0f006;
+    0%,
+    100% {
         font-weight: 500;
     }
 
-    100% {
-        color: #324457;
+    50% {
+        color: #ffffff;
+        font-weight: 500;
     }
 }
 

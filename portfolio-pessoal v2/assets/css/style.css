@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900');
 
 body,
 html {
@@ -7,10 +8,12 @@ html {
      padding: 0;
      box-sizing: border-box;
      overflow-x: hidden;
-     background: linear-gradient(180deg, rgba(32, 44, 57, 1) 0%, rgba(0, 0, 0, 1) 100%);
+     background: linear-gradient(180deg, rgb(32, 44, 57) 0%, rgba(0, 0, 0, 1) 100%);
      background-attachment: fixed;
      color: beige;
      font-family: "Lato", sans-serif;
+     user-select: none;
+     pointer-events: none;
 }
 
 a {
@@ -81,7 +84,7 @@ section {
      display: flex;
      flex-direction: row;
      flex-wrap: wrap-reverse;
-     justify-content: space-around;
+     justify-content: center;
      align-items: center;
 }
 
@@ -124,14 +127,14 @@ svg.some {
 
 .logo {
      background-color: #f6f6f6;
-     color: black;
+     color: #10232b;
      font-family: Orbitron, "sans-serif";
      font-weight: 900;
      padding: 5px;
 }
 
 .barra_logo {
-     color: #e0f006;
+     color: #2c84a7;
      animation: anima_barra_logo 1s infinite;
 }
 
@@ -156,7 +159,7 @@ svg.some {
 }
 
 .section-esq {
-     max-width: 400px;
+     max-width: 500px;
      color: #bfcbd1;
 }
 
@@ -174,13 +177,13 @@ svg.some {
 }
 
 .section-esq p {
-     font-size: 16px;
+     font-size: 20px;
      margin: 20px 0 40px;
-     text-align: justify;
+     line-height: 1.5;
+     font-style: italic;
 }
 
 .section-dir {
-     max-width: 50%;
      display: flex;
      flex-direction: row;
      justify-content: center;
