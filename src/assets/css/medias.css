@@ -1,0 +1,40 @@
+/* Para telas menores que 600px (smartphones) */
+@media screen and (max-width: 600px) {
+    .img-astronauta {
+        max-width: 350px;
+    }
+
+    section {
+        position: relative;
+        top: 100px;
+    }
+}
+
+
+/* Para telas entre 600px e 900px (tablets) */
+@media screen and (min-width: 601px) and (max-width: 950px) {
+
+    /* Estilos para tablets */
+    .img-astronauta {
+        max-width: 350px;
+    }
+
+    section {
+        position: relative;
+        top: 180px;
+    }
+}
+
+/* Para telas entre 900px e 1200px (notebooks e desktops pequenos) */
+@media screen and (min-width: 951px) and (max-width: 2200px) {
+
+    /* Estilos para dispositivos de tamanho médio */
+    .img-astronauta {
+        max-width: 450px;
+    }
+}
+
+/* Para impressão */
+@media print {
+    /* Estilos para impressão */
+}

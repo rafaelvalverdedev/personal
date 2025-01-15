@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900');
+
+body,
+html {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     overflow-x: hidden;
+     background: linear-gradient(180deg, rgb(32, 44, 57) 0%, rgba(0, 0, 0, 1) 100%);
+     background-attachment: fixed;
+     color: beige;
+     font-family: "Lato", sans-serif;
+     user-select: none;
+}
+
+/* Estilos do loader */
+
+.carregando {
+     color: rgb(184, 173, 31);
+     animation: mover 4s ease-in-out infinite alternate;
+     position: absolute;
+     bottom: 16px;
+     right: 0;
+     font-size: 24px;
+     font-family: "Orbitron", sans-serif;
+
+}
+
+/* Conteúdo escondido inicialmente */
+.content {
+     display: none;
+     opacity: 0;
+     transition: opacity 1s ease-in-out;
+}
+
+/* Quando o conteúdo estiver visível */
+.content.fade-in {
+     display: block;
+     opacity: 1;
+}
+
+/* Outros estilos do conteúdo */
+#root {
+     width: 100vw;
+     height: 100vh;
+     display: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+
+
+
