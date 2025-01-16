@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
+
 import Loader from "./components/Loader";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [componentsVisible, setComponentsVisible] = useState(false);
+
 
   useEffect(() => {
     // Simulando o carregamento da página
     const timer = setTimeout(() => {
       setLoading(false);
-      setComponentsVisible(true); // Aparecer os componentes gradualmente
     }, 3000); // Simula 3 segundos de carregamento
 
     return () => clearTimeout(timer); // Limpeza do timer
@@ -21,7 +21,7 @@ function App() {
       {loading && <Loader />}
 
       {/* Conteúdo principal */}
-      <div className={`content ${componentsVisible ? "fade-in" : ""}`}>
+      <div className="content">
         <header>
           <h1>Bem-vindo ao Meu Site</h1>
           <p>Este é um site exemplo com carregamento e animações.</p>
