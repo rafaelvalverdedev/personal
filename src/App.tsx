@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 
 import Loader from "./components/Loader";
+import Header from "./components/Header";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
 
 
   useEffect(() => {
@@ -17,19 +18,13 @@ function App() {
 
   return (
     <div className="App">
-      {/* Loader */}
-      {loading && <Loader />}
+      { isLoading ? (
+        <Loader />
+      ) : (
 
-      {/* Conteúdo principal */}
-      <div className="content">
-        <header>
-          <h1>Bem-vindo ao Meu Site</h1>
-          <p>Este é um site exemplo com carregamento e animações.</p>
-        </header>
-        <section>
-          <p>Conteúdo carregado gradualmente...</p>
-        </section>
-      </div>
+        <Header />
+
+      )}
     </div>
   );
 }

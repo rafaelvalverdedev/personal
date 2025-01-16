@@ -16,7 +16,6 @@ html {
 }
 
 /* Estilos do loader */
-
 .carregando {
      color: rgb(184, 173, 31);
      animation: mover 4s ease-in-out infinite alternate;
@@ -28,32 +27,44 @@ html {
 
 }
 
-/* Conteúdo escondido inicialmente */
-.content {
-     display: none;
-     opacity: 0;
-     transition: opacity 1s ease-in-out;
+
+img {
+     pointer-events: none;
 }
 
-/* Quando o conteúdo estiver visível */
-.content.fade-in {
-     display: block;
-     opacity: 1;
+a {
+     text-decoration: none;
 }
 
-/* Outros estilos do conteúdo */
-#root {
-     width: 100vw;
-     height: 100vh;
-     display: none;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+a:visited,
+a:active,
+a:hover {
+     color: #d2e6ee;
 }
 
+ul,
+ol {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
 
+.logogithub {
+     z-index: 999;
+     position: fixed;
+     bottom: 0px;
+     left: 10px;
+     cursor: pointer;
+     animation: anima_logogithub 2s ease-in infinite;
+}
 
+.logogithub img {
+     min-width: 40px;
+     max-width: 40px;
+}
 
-
-
+.img-astronauta {
+     height: auto;
+     transition: transform 0.5s linear;
+     filter: drop-shadow(0 0 8px rgba(81, 77, 90, 0.8));
+}
