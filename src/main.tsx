@@ -5,7 +5,6 @@ import App from './App.tsx'
 // import './assets/css/loader.css'
 // import './assets/css/medias.css'
 
-
 import './assets/css/animacoes.css'
 import './assets/css/style.css'
 import './assets/css/estrelas.css'

@@ -14,10 +14,10 @@ function Header() {
         <header>
             <nav className="navbar">
                 <div className="logo">
-                    &lt;RAFA<span className="barra_logo">/</span>&gt;
+                    &lt;RAFA<span className="barra_logo"><strong>/</strong></span>&gt;
                 </div>
 
-                <div onClick={() => { toggleMenu(); }}> <span>&#9776;</span> </div>
+                <div onClick={() => { toggleMenu(); }}> <span>{isMenuOpen ? <img src="../public/menu-close.svg" className='menu-close' /> : <img src="../public/menu.svg" className='menu' /> }</span> </div>
 
                 <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
                     <li><a href="index.html" className="item">Início</a></li>
