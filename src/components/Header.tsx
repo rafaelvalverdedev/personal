@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+import menuClose from '../assets/images/menu-close.svg';
+import menuMenu from '../assets/images/menu.svg';
+
 import '../assets/css/header.css'
 
 function Header() {
@@ -17,13 +20,21 @@ function Header() {
                     &lt;RAFA<span className="barra_logo"><strong>/</strong></span>&gt;
                 </div>
 
-                <div onClick={() => { toggleMenu(); }}> <span>{isMenuOpen ? <img src="../public/menu-close.svg" className='menu-close' /> : <img src="../public/menu.svg" className='menu' /> }</span> </div>
+                <div onClick={() => { toggleMenu(); }}> 
+                    <span>
+                        {
+                        isMenuOpen ? 
+                        <img src={menuClose} className='menu-close' /> 
+                        : 
+                        <img src={menuMenu} className='menu' /> }
+                    </span> 
+                </div>
 
                 <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
-                    <li><a href="index.html" className="item">Início</a></li>
-                    <li><a href="#Sobre" className="item">Sobre</a></li>
-                    <li><a href="#Projetos" className="item">Projetos</a></li>
-                    <li><a href="#Contato" className="item">Contato</a></li>
+                    <li><a href="#Index" className="item" data-text="Inicio">Início</a></li>
+                    <li><a href="#Sobre" className="item" data-text="Sobre">Sobre</a></li>
+                    <li><a href="#Projetos" className="item" data-text="Projetos">Projetos</a></li>
+                    <li><a href="#Contato" className="item" data-text="Contato">Contato</a></li>
                 </ul>
 
             </nav>
