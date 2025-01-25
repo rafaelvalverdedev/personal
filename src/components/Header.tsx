@@ -31,10 +31,10 @@ function Header() {
                 </div>
 
                 <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
-                    <li><a href="#Index" className="item" data-text="Inicio">Início</a></li>
-                    <li><a href="#Sobre" className="item" data-text="Sobre">Sobre</a></li>
-                    <li><a href="#Projetos" className="item" data-text="Projetos">Projetos</a></li>
-                    <li><a href="#Contato" className="item" data-text="Contato">Contato</a></li>
+                    <li><a href="#Index" className="item" data-text="Inicio" onClick={() => { toggleMenu(); }}>Início</a></li>
+                    <li><a href="#Sobre" className="item" data-text="Sobre" onClick={() => { toggleMenu(); }}>Sobre</a></li>
+                    <li><a href="#Projetos" className="item" data-text="Projetos" onClick={() => { toggleMenu(); }}>Projetos</a></li>
+                    <li><a href="#Contato" className="item" data-text="Contato" onClick={() => { toggleMenu(); }}>Contato</a></li>
                 </ul>
 
             </nav>
