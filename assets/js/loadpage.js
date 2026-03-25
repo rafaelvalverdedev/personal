@@ -7,9 +7,7 @@ function showElement(element, delay) {
 
 function apagaElement(element, delay) {
     setTimeout(() => {
-        // element.style.display = 'none';
         element.classList.add('some');
-
     }, delay);
 }
 
@@ -27,10 +25,10 @@ window.onload = function () {
     const footer = document.querySelector('footer');
     const logogithub = document.getElementById('logogithub');
 
-    showElement(svg, 100);     
+    showElement(svg, 100);
     apagaElement(svg, 700);
-    showElement(header, 1000); 
-    showElement(section, 1500); 
+    showElement(header, 1000);
+    showElement(section, 1500);
     showElement(footer, 2000);
     showElement(logogithub, 2500);
 
