@@ -1,3 +1,16 @@
+#loader {
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(32, 44, 57) 0%, black 100%);
+    z-index: 9999;
+}
+
 .carregando {
     color: rgb(184, 173, 31);
     animation: mover 4s ease-in-out infinite alternate;

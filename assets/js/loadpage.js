@@ -21,31 +21,19 @@ window.onload = function () {
 
     const svg = document.querySelector('svg');
     const header = document.querySelector('header');
-    const section = document.querySelector('section');
+    const section = document.getElementById('horizontal').children[0];
     const footer = document.querySelector('footer');
     const logogithub = document.getElementById('logogithub');
+    const sections = document.querySelectorAll('.panel');
 
+    sections.forEach((sec, index) => {
+        showElement(sec, 2500 + (index * 300));
+    });
     showElement(svg, 100);
-    apagaElement(svg, 700);
-    showElement(header, 1000);
-    showElement(section, 1500);
-    showElement(footer, 2000);
-    showElement(logogithub, 2500);
+    apagaElement(svg, 1900);
+    showElement(header, 2000);
+    showElement(section, 2500);
+    showElement(footer, 2500);
+    showElement(logogithub, 3000);
 
-    // showElement(svg, 1);     
-    // apagaElement(svg, 1);
-    // showElement(header, 1); 
-    // showElement(section, 1); 
-    // showElement(footer, 1);
-    // showElement(logogithub, 1);
-
-
-
-    /*
-    // Simular um carregamento de 3 segundos
-    setTimeout(() => {
-        loader.style.display = 'none';
-        content.style.display = 'flex';
-    }, 5000);
-    */
 };

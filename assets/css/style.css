@@ -6,8 +6,9 @@ body,
 html {
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
      overflow-x: hidden;
+     overflow-y: hidden;
+     box-sizing: border-box;
      background: linear-gradient(180deg, rgb(32, 44, 57) 0%, rgba(0, 0, 0, 1) 100%);
      background-attachment: fixed;
      color: beige;
@@ -34,15 +35,6 @@ ol {
      margin: 0;
 }
 
-#content {
-     width: 100vw;
-     height: 100vh;
-     display: none;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
 
 .logogithub,
 header,
@@ -72,15 +64,6 @@ header {
      align-items: center;
 }
 
-section {
-     z-index: 1;
-     position: absolute;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap-reverse;
-     justify-content: center;
-     align-items: center;
-}
 
 footer {
      z-index: 10;
@@ -181,4 +164,31 @@ svg.some {
      display: flex;
      flex-direction: row;
      justify-content: center;
+}
+
+.horizontal-container {
+     display: flex;
+    height: 100vh;
+    width: max-content;
+    transition: transform 0.8s ease-in-out;
+}
+
+.panel {
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+}
+
+/* Só pra visualização */
+.panel:nth-child(1) { color: white; }
+.panel:nth-child(2) { background: #222; color: white; }
+
+section{
+z-index: 1;
 }
