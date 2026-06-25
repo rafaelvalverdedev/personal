@@ -46,4 +46,5 @@ Criação um aplicativo para criar, editar e excluir notas, praticando CRUD e ar
 Dica: Para cada projeto, busquei incorporar novas tecnologias ou conceitos que estava aprendendo, como frameworks (React, Vue, Angular), pré-processadores CSS (Sass, Less), ou ferramentas de build (Webpack, Parcel).
 
 </aside>
-75 9286-9447
+9286
+9447
